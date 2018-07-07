@@ -4,16 +4,18 @@
 #
 Name     : perl-Math-Random-ISAAC-XS
 Version  : 1.004
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/J/JA/JAWNSY/Math-Random-ISAAC-XS-1.004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JA/JAWNSY/Math-Random-ISAAC-XS-1.004.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libm/libmath-random-isaac-xs-perl/libmath-random-isaac-xs-perl_1.004-2.debian.tar.xz
 Summary  : 'C implementation of the ISAAC PRNG algorithm'
 Group    : Development/Tools
-License  : Artistic-1.0 Artistic-2.0 GPL-1.0 GPL-3.0 MIT unrestricted
+License  : Artistic-1.0 Artistic-2.0 GPL-1.0 GPL-3.0 MIT
 Requires: perl-Math-Random-ISAAC-XS-lib
 Requires: perl-Math-Random-ISAAC-XS-license
 Requires: perl-Math-Random-ISAAC-XS-man
+Requires: perl(Module::Build)
+Requires: perl(Test::NoWarnings)
 BuildRequires : perl(Module::Build)
 BuildRequires : perl(Test::NoWarnings)
 
