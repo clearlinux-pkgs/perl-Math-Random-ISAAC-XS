@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-Random-ISAAC-XS
 Version  : 1.004
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/J/JA/JAWNSY/Math-Random-ISAAC-XS-1.004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JA/JAWNSY/Math-Random-ISAAC-XS-1.004.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libm/libmath-random-isaac-xs-perl/libmath-random-isaac-xs-perl_1.004-2.debian.tar.xz
@@ -73,7 +73,7 @@ fi
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Math-Random-ISAAC-XS
 cp %{_builddir}/Math-Random-ISAAC-XS-1.004/LICENSE %{buildroot}/usr/share/package-licenses/perl-Math-Random-ISAAC-XS/b46e09ed0be834bcddac2c482e0626787091333d
-cp %{_builddir}/Math-Random-ISAAC-XS-1.004/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Math-Random-ISAAC-XS/612d1863959550ab9011a55a195eeb6a86d9614c
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Math-Random-ISAAC-XS/612d1863959550ab9011a55a195eeb6a86d9614c
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -98,5 +98,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Math/Random/ISAAC/XS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Math/Random/ISAAC/XS/XS.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Math/Random/ISAAC/XS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Math/Random/ISAAC/XS/XS.so
